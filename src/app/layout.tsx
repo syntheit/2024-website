@@ -3,6 +3,7 @@ import "~/styles/globals.css";
 import { Inter } from "next/font/google";
 import { Providers } from "./providers";
 import NavbarCustom from "~/components/Navbar/NavbarCustom";
+import Head from "next/head";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -22,11 +23,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <script
+          defer
+          data-domain="analytics.matv.io"
+          src="https://analytics.matv.io/js/script.js"
+        ></script>
+      </Head>
       <body
-        className={`text-foreground bg-background dark font-sans ${inter.variable}`}
+        className={`bg-background font-sans text-foreground dark ${inter.variable}`}
       >
         <Providers>
-          {/* <NavbarCustom /> */}
           {children}
         </Providers>
       </body>
