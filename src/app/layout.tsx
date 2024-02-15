@@ -26,7 +26,7 @@ export default function RootLayout({
       <Head>
         <script
           defer
-          data-domain="analytics.matv.io"
+          data-domain="matv.io"
           src="https://analytics.matv.io/js/script.js"
         ></script>
       </Head>
