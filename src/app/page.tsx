@@ -12,6 +12,8 @@ import {
   GithubIcon,
   LinkedInIcon,
   ResumeIcon,
+  DockerIcon,
+  MatrixIcon,
 } from "~/components/Icons";
 
 export default function HomePage() {
@@ -44,7 +46,6 @@ export default function HomePage() {
           </CardHeader>
           <Image
             removeWrapper
-            alt="Card background"
             className="z-0 object-cover w-full h-full"
             src="/images/indian-falls-overlook.webp"
           />
@@ -53,7 +54,7 @@ export default function HomePage() {
           className="col-span-12 h-[300px] sm:col-span-4"
           isPressable
           as={Link}
-          href="/projects-work"
+          href="/projects&work"
         >
           <CardHeader className="absolute top-1 z-10 flex-col !items-start">
             <p className="font-bold uppercase text-tiny text-white/60">
@@ -65,7 +66,6 @@ export default function HomePage() {
           </CardHeader>
           <Image
             removeWrapper
-            alt="Card background"
             className="z-0 object-cover w-full h-full"
             src="/images/thinkpad.webp"
           />
@@ -86,7 +86,6 @@ export default function HomePage() {
           </CardHeader>
           <Image
             removeWrapper
-            alt="Card background"
             className="z-0 object-cover w-full h-full"
             src="/images/new-orleans-streetcar.webp"
           />
@@ -108,7 +107,6 @@ export default function HomePage() {
           </CardHeader>
           <Image
             removeWrapper
-            alt="Card example background"
             className="z-0 object-cover w-full h-full scale-125 -translate-y-6"
             src="/images/waffle-house.webp"
           />
@@ -127,7 +125,6 @@ export default function HomePage() {
           </CardHeader>
           <Image
             removeWrapper
-            alt="Relaxing app background"
             className="z-0 object-cover w-full h-full"
             src="/images/quebec-street.webp"
           />
@@ -149,6 +146,24 @@ export default function HomePage() {
               >
                 <GithubIcon size={24} />
               </Button>
+              <Button
+                isIconOnly
+                aria-label="DockerHub"
+                as={Link}
+                href="https://hub.docker.com/u/synzeit"
+              >
+                <DockerIcon size={24} />
+              </Button>
+              <Tooltip content="@syntheit:matrix.org" size="md">
+                <Button
+                  isIconOnly
+                  aria-label="Matrix"
+                  as={Link}
+                  href="https://matrix.to/#/@syntheit:matrix.org"
+                >
+                  <MatrixIcon size={24} />
+                </Button>
+              </Tooltip>
               <Tooltip content="daniel@matv.io" size="md">
                 <Button
                   isIconOnly
