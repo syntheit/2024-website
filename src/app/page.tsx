@@ -165,10 +165,6 @@ export default function HomePage() {
                   <MatrixIcon size={24} />
                 </Button>
               </Tooltip>
-              <Tooltip
-                content="https://open.spotify.com/user/312k3mbad43po7ghp67ralyw2j6q"
-                size="md"
-              >
                 <Button
                   isIconOnly
                   aria-label="Spotify"
@@ -177,7 +173,6 @@ export default function HomePage() {
                 >
                   <SpotifyIcon size={24} />
                 </Button>
-              </Tooltip>
               <Tooltip content="daniel@matv.io" size="md">
                 <Button
                   isIconOnly
